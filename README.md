@@ -1,1 +1,6 @@
-# lab-pbw-b--Iwansur-Sidik-
+# Ini merupakan repository tugas praktikum Pemrograman Berbasis Web INF 224 USK 2023
+ 
+## Data Diri
+ 
+Nama: Iwansur Sidik
+NPM:2108107010091
