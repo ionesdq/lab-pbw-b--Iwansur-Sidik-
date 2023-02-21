@@ -1,3 +1,10 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -18,12 +25,17 @@ body {
   
   .card {
     float: right;
-    margin: 20px 20px 20px 0;
+    margin: 20px 0 20px 20px;
     width: 250px;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card:hover {
+    background-color: #f2f2f2;
   }
   
   .card img {
@@ -32,7 +44,8 @@ body {
   }
   
   .biodata {
-    padding: 20px;
+    padding: 10px;
+    overflow: auto;
   }
   
   h2 {
@@ -43,22 +56,37 @@ body {
     border-collapse: collapse;
     margin-top: 10px;
     width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   }
   
+  th,
   td {
-    padding: 5px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
   }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(13, 255, 0, 0.778);
+  }  
   
   .jadwal-kuliah {
     margin-top: 20px;
-    margin-right: 280px;
+    margin-left: 20px;
     margin-bottom: 50px;
     border-collapse: collapse;
-    width: 100%;
+    width: calc(100% - 400px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
   }
+  
   
   .jadwal-kuliah caption {
     background-color: #222;
