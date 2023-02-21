@@ -1,0 +1,92 @@
+/* Style untuk header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Style untuk main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style untuk card biodata */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.biodata {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style untuk jadwal kuliah */
+table.jadwal-kuliah {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.jadwal-kuliah caption {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+table.jadwal-kuliah th, table.jadwal-kuliah td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table.jadwal-kuliah th {
+    background-color: #333;
+    color: white;
+}
+
+table.jadwal-kuliah tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.jadwal-kuliah tr:hover {
+    background-color: #ddd;
+}
+
+/* Style untuk footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main {
+    padding-bottom: 100px;
+  }
+  

@@ -2,92 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biodata Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="public/assets/css/style.css">
 </head>
-<!--tugas ini untuk memenugi tugas 2 pemrograman berbasis web dengan membuat 
-    biodata dan membuat matakuliah yang diambil dengan bentuk tabel-->
 <body>
-    <h1><font face="arial">Biodata Mahasiswa</font></h1>
-    <!--font face untuk mengatur font yang diinginkan-->
-    <!--jika ingin menambahkan foto cukup tambahkan seperti dikomen ini
-        <img src="https://i.postimg.cc/DwsgSXhV/IMG-0721.jpg" width="150px" height="200px">-->
-    <div>
-        <table>
+    <header>
+        <h1>DAFTAR MATA KULIAH SAYA</h1>
+    </header>
+    <main>
+        <div class="card">
+            <img src="https://i.postimg.cc/DwsgSXhV/IMG-0721.jpg" alt="Foto Profil">
+            <div class="biodata">
+                <h2>Iwansur Sidik</h2>
+                <table>
+                    <tr>
+                        <td>NIM</td>
+                        <td>:</td>
+                        <td>2108107010091</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>:</td>
+                        <td>Informatika</td>
+                    </tr>
+                    <tr>
+                        <td>Fakultas</td>
+                        <td>:</td>
+                        <td>FMIPA</td>
+                    </tr>
+                    <tr>
+                        <td>Universitas</td>
+                        <td>:</td>
+                        <td>Syiah Kuala</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <table class="jadwal-kuliah">
+            <caption>Jadwal Kuliah</caption>
+            <thead>
+                <tr>
+                    <th>Nama Mata Kuliah</th>
+                    <th>SKS</th>
+                    <th>Dosen Pengampu</th>
+                    <th>Ruangan</th>
+                    <th>Waktu & Hari</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
-                    <td>Nama Lengkap</td><td>:</td>
-                    <td>Iwansur Sidik</td>
+                    <td>Pemrograman Berbasis Web</td>
+                    <td>3</td>
+                    <td>Husaini</td>
+                    <td>E03.02</td>
+                    <td>Kamis 14.00</td>
                 </tr>
                 <tr>
-                    <td>NIM</td><td>:</td>
-                    <td>2108107010091</td>
+                    <td>Etika Teknologi Informasi</td>
+                    <td>2</td>
+                    <td>Dalila Husna Yunardi</td>
+                    <td>E03.02</td>
+                    <td>Rabu 16.00</td>
                 </tr>
                 <tr>
-                    <td>Jurusan</td><td>:</td>
-                    <td>Informatika</td>
+                    <td>Rekayasa Perangkat Lunak</td>
+                    <td>3</td>
+                    <td>Dalila Husna Yunardi</td>
+                    <td>E03.02</td>
+                    <td>Jumat 08.15</td>
                 </tr>
                 <tr>
-                    <td>Fakultas</td><td>:</td>
-                    <td>FMIPA</td>
+                    <td>Komunikasi Data</td>
+                    <td>3</td>
+                    <td>Husaini</td>
+                    <td>E03.02</td>
+                    <td>Jumat 16.00</td>
                 </tr>
                 <tr>
-                    <td>Universitas</td><td>:</td>
-                    <td>Syiah Kuala</td>
+                    <td>Struktur Data dan Algoritma</td>
+                    <td>3</td>
+                    <td>Zahnur</td>
+                    <td>03.02</td>
+                    <td>Senin 08.15</td>
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div>
-        <table border="1" cellpadding="10">
-            <!-- Jika ingin menggunakan tabel yang ada bordernya maka cukup menambahkan border="1", 
-                value bisa berubah sesuai dengan ukuran border yang ingin ditentukan, 
-            jika ingin text agar tidak terlalu rapet ke dalam garis tabel maka cukup
-        tambahkan cellpadding="10" value berubah jika ingin menambah dan mengurangi kerapatan-->
-            <tr>
-                <th>Nama mata Kuliah</th>
-                <th>SKS</th>
-                <th>Dosen pengampu</th>
-                <th>Ruangan</th>
-                <th>Waktu & hari</th>
-            </tr>
-            <tr>
-                <td>Pemrograman Berbasis Web</td>
-                <td>3</td>
-                <td>Husaini</td>
-                <td>E03.02</td>
-                <td>Kamis 14.00</td>
-            </tr>
-            <tr>
-                <td>Etika Teknologi Informasi</td>
-                <td>2</td>
-                <td>Dalila Husna Yunardi</td>
-                <td>E03.02</td>
-                <td>Rabu 16.00</td>
-            </tr>
-            <tr>
-                <td>Rekayasa Perangkat Lunak</td>
-                <td>3</td>
-                <td>Dalila Husna Yunardi</td>
-                <td>E03.02</td>
-                <td>Jumat 08.15</td>
-            </tr>
-            <tr>
-                <td>Komunikasi Data</td>
-                <td>3</td>
-                <td>Husaini</td>
-                <td>E03.02</td>
-                <td>Jumat 16.00</td>
-            </tr>
-            <tr>
-                <td>Struktu data dan Algoritma</td>
-                <td>3</td>
-                <td>Zahnur</td>
-                <td>03.02</td>
-                <td>Senin 08.15</td>
-            </tr>
-        </table>
-    </div>
+    </main>
+    <footer>
+        <p>&copy; Made By Iwansur Sidik</p>
+    </footer>
 </body>
-</html>
+</html>    
